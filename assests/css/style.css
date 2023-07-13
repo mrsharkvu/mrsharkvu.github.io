@@ -1,0 +1,35 @@
+body {
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.background img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -2;
+	min-width: 100%;
+	min-height: 100%;
+	filter: brightness(60%);
+	pointer-events: none;
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 16px auto;
+	pointer-events: none;
+}
+
+.circle img {
+	width: 100%;
+	height: auto;
+}

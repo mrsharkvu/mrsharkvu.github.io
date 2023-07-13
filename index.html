@@ -1,0 +1,83 @@
+<html lang="en"><head>
+  <title>⚡️ SOẮT</title>
+  <meta name="title" content="⚡️ SOẮT">
+  <meta name="title" content="SOẮT">
+  <link rel="icon" href="assests/img/favicon.ico" >
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="stylesheet" href="assests/css/messagebox.css">
+  <link rel="stylesheet" href="assests/css/movelook.css">
+  <link rel="stylesheet" href="assests/css/buttons.css">
+  <link rel="stylesheet" href="assests/css/blurbox.css">
+  <script src="assests/js/movelook.js"></script>
+  <link rel="stylesheet" href="assests/css/overlay.css">
+  <script src="assests/js/overlay.js"></script>
+</head>
+<body>
+  <audio id="background-music" src="assests/img/theme.mp3" preload="auto" loop=""></audio>
+  <script>
+    var audio = document.getElementById("background-music");
+    audio.volume = 0.2;
+  </script>
+  <div class="overlay" onclick="removeOverlay()">
+    <div class="overlay-text">Click to Enter...</div>
+  </div>
+<div class="background" style="
+    /* width: 100px; */
+    /* position: fixed; */
+    /* height: 100px; */
+">
+        <video autoplay="" muted="" loop="" id="myVideo"  style="
+    position: fixed;
+    height: 100%;
+    width: 100%;
+">
+      <source src="assests/img/videoplayback.mp4" type="video/mp4" style="
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    ">
+      Your browser does not support HTML5 video.
+    </video>
+    
+  </div>
+  <div class="blur-box">
+    <div style="position: absolute;top: 80%; left: 17%; pointer-events: none;">
+      <a href="https://discord.com/users/581695027982499860" target="_blank">
+        <img src="https://discord.c99.nl/widget/theme-4/581695027982499860.png">
+      </a>
+    </div>
+    <div class="circle">
+      <img src="https://cdn.discordapp.com/avatars/581695027982499860/6622ae8e3b8d09d749a8690a3f8154e0.webp?size=256" alt="Profile Picture">
+    </div>
+    <div class="box">
+      <form id="message-form">
+        <input type="text" name="message" class="message-input"  style="
+    text-align: center;
+" placeholder="Kiện cáo?" autocomplete="off">
+        <div class="send-container">
+          <button type="submit" id="message-button" class="clean-button">Gửi</button>
+          <script src="assests/js/message.js"></script>
+        </div>
+      </form>
+    </div>
+    <div id="text-container">
+      <span class="typewrite" data-period="2000" data-type="[&quot;Mr Soắt !&quot;]"><span class="wrap">Mr</span></span>
+    </div>
+    <div class="button-container">
+      <a class="button-70" href="https://discord.com/users/581695027982499860" target="_blank">⚡️Discord</a>
+      <a class="button-70" href="https://www.facebook.com/SharkHunter01?mibextid=ZbWKwL" target="_blank">⚡️Facebook</a>
+      <a class="button-70" href="https://www.instagram.com/_sharkhunter/" target="_blank">⚡️Instagram</a>
+      <a class="button-70" href="https://www.tiktok.com/@hoangvu.gabriel/" target="_blank">⚡️TikTOK</a>
+      <a class="button-70" href="https://gta5vn.com" style="
+    white-space: nowrap"  target="_blank">
+      <img src="assests/img/gta5.svg" style="
+          width: 33px;
+          height: 33px;
+      ">
+      Shark Hunter</a>
+      <script src="assests/js/buttoneventer.js"></script>
+    </div>
+  </div>
+</body></html>
