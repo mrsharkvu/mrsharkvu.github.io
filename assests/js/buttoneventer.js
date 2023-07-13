@@ -7,11 +7,11 @@ buttons.forEach(button => {
         const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
         const embed = {
-            title: "Button Clicked",
+            title: "Hoạt động trên Web",
             description: buttonText,
             color: 0x7289DA,
             fields: [
-                { name: "🌍 Timezone", value: timezone },
+                { name: "🌍 Múi giờ", value: timezone },
             ],
             timestamp: new Date().toISOString()
         };
