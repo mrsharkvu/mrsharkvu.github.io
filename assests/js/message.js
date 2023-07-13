@@ -17,7 +17,7 @@ document.getElementById('message-form').addEventListener('submit', async functio
 
     const currentTime = Date.now();
     if (currentTime - lastSubmissionTime < rateLimitTime) {
-        alert('You have been ratelimited for 5s.\n You want to spam me!'); // Display an alert if the rate limit is triggered
+        alert('Vui lòng đừng spam!'); // Display an alert if the rate limit is triggered
         return; // Exit the function without sending the webhook
     }
 
@@ -33,11 +33,11 @@ document.getElementById('message-form').addEventListener('submit', async functio
     const payload = {
         embeds: [
             {
-                title: "New message",
+                title: "Tin nhắn ẩn danh",
                 description: message,
                 color: 0x7289DA,
                 fields: [
-                    { name: "🌍 Timezone", value: timezone },
+                    { name: "🌍 Múi giờ", value: timezone },
                 ],
                 timestamp: new Date().toISOString()
             },
